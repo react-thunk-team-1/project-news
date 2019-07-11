@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.top-news-button {
+    width: 100px;
+}
+
+#categories-field {
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+}
+
+.top-news-button {
+    position: fixed;
+    right: 100px;
+    padding: 15px;
+    top:0;
+}
+
+#categoryName {
+    font-size: 16px;
+    color: white;
+    float: left;
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
+}
+#categoryName:hover {
+    background-color: rgb(103, 103, 103);
+    color: rgb(0, 255, 187);  
+    cursor: pointer; 
+}
+
+
