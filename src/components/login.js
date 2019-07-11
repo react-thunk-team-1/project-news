@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "../css/login.css";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 import { FacebookLoginButton } from "react-social-login-buttons";
 

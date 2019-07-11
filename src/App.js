@@ -1,15 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import CategoriesField from './components/CategoriesField'
+import TopNews from './containers/TopNews'
 import Login from './components/login'
 
-function App() {
-  return (
-    <div className="App">
-     <Login />
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <Login/>
+    <CategoriesField />
+    <div id="empty-space"></div>
+    <TopNews />
+  </div>
+)
 
 export default App;

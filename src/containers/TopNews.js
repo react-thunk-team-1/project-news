@@ -20,7 +20,7 @@ let TopNews = ({ categories, loading }) => {
     }
 
     return (
-        <div>
+        <div id="news-field">
             {topNews}
         </div>
     )
