@@ -33,19 +33,19 @@ export const receivedPosts = json => ({
   json: json.articles
 });
 
-export function fetchPosts(category) {
-  return function(dispatch) {
-    dispatch(requestPosts());
+// export function fetchPosts(category) {
+//   return function(dispatch) {
+//     dispatch(requestPosts());
 
-    return fetch(
-      `https://newsapi.org/v2/top-headlines?country=id&category=${category}&apiKey=${MY_API_KEY}`
-    )
-      .then(
-        response => response.json(),
-        error => console.log("An error occurred.", error)
-      )
-      .then(json => {
-        dispatch(receivedPosts(json));
-      });
-  };
-}
+//     return fetch(
+//       `https://newsapi.org/v2/top-headlines?country=id&category=${category}&apiKey=${MY_API_KEY}`
+//     )
+//       .then(
+//         response => response.json(),
+//         error => console.log("An error occurred.", error)
+//       )
+//       .then(json => {
+//         dispatch(receivedPosts(json));
+//       });
+//   };
+// }
