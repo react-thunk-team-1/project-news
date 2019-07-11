@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    
+    background-size: cover;
 }
 
 .top-news-button {
@@ -18,8 +20,16 @@ body {
 .top-news-button {
     position: fixed;
     right: 100px;
-    padding: 15px;
+    padding: 10px;
     top:0;
+    border-radius: 10px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.top-news-button:hover {
+    background: transparent;
+    color: white;
 }
 
 #categoryName {
@@ -29,10 +39,26 @@ body {
     padding: 0 20px;
     font-family: 'Lato', sans-serif;
 }
+
 #categoryName:hover {
     background-color: rgb(103, 103, 103);
     color: rgb(0, 255, 187);  
     cursor: pointer; 
 }
 
+#news-field, img {
+    width: 600px;
+    margin: 20px auto;
+}
 
+#news-field {
+
+}
+
+h3 {
+    font-size: 36px;
+}
+
+#empty-space {
+    height: 50px;
+}
