@@ -6,7 +6,7 @@ import TopNews from '../containers/TopNews'
 const App = () => (
   <div>
     <CategoriesField />
-    <Button />
+    <div id="empty-space"></div>
     <TopNews />
   </div>
 )

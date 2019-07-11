@@ -1,5 +1,6 @@
 import React from 'react'
 import Category from '../containers/Categories'
+import { fetchPosts } from '../actions'
 
 const CategoriesField = () => (
 
