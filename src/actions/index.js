@@ -24,7 +24,7 @@ export const getCategory = category => dispatch => {
     });
 };
 
-export const requestPosts = () => ({
+export const Posts = () => ({
   type: REQUEST_POSTS
 });
 
@@ -32,20 +32,3 @@ export const receivedPosts = json => ({
   type: RECEIVE_POSTS,
   json: json.articles
 });
-
-// export function fetchPosts(category) {
-//   return function(dispatch) {
-//     dispatch(requestPosts());
-
-//     return fetch(
-//       `https://newsapi.org/v2/top-headlines?country=id&category=${category}&apiKey=${MY_API_KEY}`
-//     )
-//       .then(
-//         response => response.json(),
-//         error => console.log("An error occurred.", error)
-//       )
-//       .then(json => {
-//         dispatch(receivedPosts(json));
-//       });
-//   };
-// }
