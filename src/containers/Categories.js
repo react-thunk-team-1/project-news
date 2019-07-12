@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { getCategory, activateCategory } from "../actions";
+import { getCategory } from "../actions";
 
 let Category = ({ categoryName, categoryString, onClick, active }) => (
   <div id="categoryName" onClick={onClick}>

