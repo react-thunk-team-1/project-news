@@ -1,18 +1,33 @@
-import React from 'react'
-import Category from '../containers/Categories'
-import { fetchPosts } from '../actions'
+import React from "react";
+import Category from "../containers/Categories";
+import { Link, Route } from "react-router-dom";
+import TopNews from "../containers/TopNews";
 
 const CategoriesField = () => (
-
-  <div id="categories-field" >
-    <Category categoryName="BUSINESS" categoryString="business" />
-    <Category categoryName="ENTERTAINMENT" categoryString   ="entertainment" />
-    <Category categoryName="HEALTH" categoryString="health" />
-    <Category categoryName="SCIENCE" categoryString="science" />
-    <Category categoryName="SPORTS" categoryString="sports" />
-    <Category categoryName="TECHNOLOGY" categoryString="technology" />
+  <div>
+    <div id="categories-field">
+      <Category categoryName="business" categoryString="business" />
+      <Category categoryName="entertainment" categoryString="entertainment" />
+      <Category categoryName="health" categoryString="health" />
+      <Category categoryName="science" categoryString="science" />
+      <Category categoryName="sports" categoryString="sports" />
+      <Category categoryName="technology" categoryString="technology" />
+      <Link
+        to="/"
+        style={{
+          float: "right",
+          textDecoration: "none",
+          margin: "15px 30px",
+          color: "white"
+        }}
+      >
+        Log out
+      </Link>
+    </div>
+    <div id="news-wrapper">
+      <TopNews />
+    </div>
   </div>
 );
 
 export default CategoriesField;
-

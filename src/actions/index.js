@@ -24,7 +24,7 @@ export const getCategory = category => dispatch => {
     });
 };
 
-export const requestPosts = () => ({
+export const Posts = () => ({
   type: REQUEST_POSTS
 });
 
