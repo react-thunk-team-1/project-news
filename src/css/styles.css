@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-size: cover;
+  
 }
 
 .top-news-button {
@@ -35,9 +36,6 @@ img {
   margin: 20px auto;
 }
 
-#news-field {
-}
-
 h3 {
   font-size: 36px;
 }
@@ -56,4 +54,38 @@ p {
 #news-wrapper{
   margin-top: 50px;
   padding: 25px;
+  background: linear-gradient(to bottom, #feffff 0%,#d2ebf9 100%);
+}
+
+.article {
+  width: 300px;
+  margin: 0 auto;
+}
+
+img {
+  width: 300px;
+
+}
+
+.judul-artikel {
+  font-size: 2em;
+}
+
+.deskripsi-artikel {
+  color: black;
+  width: 300px;
+}
+
+#content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.news-content {
+  margin: 20px;
+  /* border-color: black;
+  border-style: solid; */
+  padding: 30px;
+  border-radius: 10px;
 }

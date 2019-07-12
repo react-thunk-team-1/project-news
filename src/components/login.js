@@ -44,7 +44,7 @@ class Login extends React.Component {
         console.log(res)
       })
     } else {
-      this.props.history.push("/Category")
+      alert("Please fill in the username and/or password text field")
     }
     }
 
