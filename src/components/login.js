@@ -10,32 +10,48 @@ class Login extends React.Component {
   };
 
   handleChange = event => {
-    this.setState({[event.target.name]:event.target.value})
+    this.setState({ [event.target.name]: event.target.value });
   };
 
   handleSubmit = event => {
     event.preventDefault();
-this.props.history.push("/Category")
-
-  }
+    if (this.state.password !== "" && this.state.email !== "") {
+      this.props.history.push("/Category");
+    } else {
+      alert("you have to fill first")
+    }
+  };
 
   render() {
     return (
-      <Form className="login-form d-flex flex-column justify-content-center align-items-center" onSubmit={this.handleSubmit}>
+      <Form
+        className="login-form d-flex flex-column justify-content-center align-items-center"
+        onSubmit={this.handleSubmit}
+      >
         <h4>
           <span className="font-weight-bold">My Account</span>
         </h4>
         <FormGroup className="w-100">
           <label>Email</label>
-          <Input name="email" type="email" placeholder="email" value={this.state.email} onChange={this.handleChange}/>
+          <Input
+            name="email"
+            type="email"
+            placeholder="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
         </FormGroup>
         <FormGroup className="w-100">
           <label>Password</label>
-          <Input name="password" type="password" placeholder="password" value={this.state.password} onChange={this.handleChange}/>
+          <Input
+            name="password"
+            type="password"
+            placeholder="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+          />
         </FormGroup>
-        <Button className="btn-lg size=lg w-100 color">
-          Sign in
-        </Button>
+        <Button className="btn-lg size=lg w-100 color">Sign in</Button>
         <div className="text-center pt-3">
           or continue with your social account
         </div>
