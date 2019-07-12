@@ -44,9 +44,11 @@ class Login extends React.Component {
         console.log(res)
       })
     } else {
-      alert("you have to fill first")
+      this.props.history.push("/Category")
     }
-  };
+    }
+
+  
 
   render() {
     return (
