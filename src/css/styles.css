@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    
-    background-size: cover;
+    /* background-image: url('../images/background-image.jpg');
+    background-size: 100%;
+    background-attachment: fixed; */
 }
 
 .top-news-button {
@@ -15,21 +16,7 @@ body {
     overflow: hidden;
     position: fixed;
     top:0;
-}
-
-.top-news-button {
-    position: fixed;
-    right: 100px;
-    padding: 10px;
-    top:0;
-    border-radius: 10px;
-    margin-top: 7px;
-    font-size: 12px;
-}
-
-.top-news-button:hover {
-    background: transparent;
-    color: white;
+    padding-left: 100px;
 }
 
 #categoryName {
@@ -47,7 +34,7 @@ body {
 }
 
 #news-field, img {
-    width: 600px;
+    width: 800px;
     margin: 20px auto;
 }
 
@@ -57,8 +44,14 @@ body {
 
 h3 {
     font-size: 36px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
+p {
+    color: white
+}
 #empty-space {
     height: 50px;
 }
+

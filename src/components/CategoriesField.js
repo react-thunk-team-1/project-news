@@ -5,12 +5,12 @@ import { fetchPosts } from '../actions'
 const CategoriesField = () => (
 
   <div id="categories-field" >
-    <Category categoryName="business" categoryString="business" />
-    <Category categoryName="entertainment" categoryString   ="entertainment" />
-    <Category categoryName="health" categoryString="health" />
-    <Category categoryName="science" categoryString="science" />
-    <Category categoryName="sports" categoryString="sports" />
-    <Category categoryName="technology" categoryString="technology" />
+    <Category categoryName="BUSINESS" categoryString="business" />
+    <Category categoryName="ENTERTAINMENT" categoryString   ="entertainment" />
+    <Category categoryName="HEALTH" categoryString="health" />
+    <Category categoryName="SCIENCE" categoryString="science" />
+    <Category categoryName="SPORTS" categoryString="sports" />
+    <Category categoryName="TECHNOLOGY" categoryString="technology" />
   </div>
 );
 
