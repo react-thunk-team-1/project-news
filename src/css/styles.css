@@ -54,7 +54,8 @@ p {
 #news-wrapper{
   margin-top: 50px;
   padding: 25px;
-  background: linear-gradient(to bottom, #feffff 0%,#d2ebf9 100%);
+  background-color: aliceblue;
+  min-height: 7 00px;
 }
 
 .article {
@@ -83,9 +84,11 @@ img {
 }
 
 .news-content {
-  margin: 20px;
+  margin: 1em;
   /* border-color: black;
   border-style: solid; */
   padding: 30px;
   border-radius: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 100px rgb(238, 238, 238);
 }
