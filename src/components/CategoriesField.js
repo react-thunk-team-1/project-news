@@ -1,6 +1,6 @@
 import React from "react";
 import Category from "../containers/Categories";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TopNews from "../containers/TopNews";
 
 const CategoriesField = () => (

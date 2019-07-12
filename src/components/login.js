@@ -15,9 +15,18 @@ class Login extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-this.props.history.push("/Category")
+    if(this.state.email === ""){
+      alert('Fill the email first!')
+    } else if (this.state.password === ""){
+      alert ('Password Wrong!')
+    } else if (this.state.email === "" && this.state.password === ""){
+      alert('Nothing inputed!')
+    } else {
+      this.props.history.push("/Category")
+    }
+    }
 
-  }
+  
 
   render() {
     return (
