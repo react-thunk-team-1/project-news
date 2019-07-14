@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-size: cover;
-  
+  background-size: auto 100%;
+  min-height: 100%;
 }
 
 .top-news-button {
@@ -54,7 +54,7 @@ p {
 #news-wrapper{
   margin-top: 50px;
   padding: 25px;
-  background-color: aliceblue;
+  background-color: rgb(218, 238, 255);
   min-height: 7 00px;
 }
 
@@ -69,7 +69,7 @@ img {
 }
 
 .judul-artikel {
-  font-size: 2em;
+  font-size: 28px;
 }
 
 .deskripsi-artikel {
@@ -77,16 +77,18 @@ img {
   width: 300px;
 }
 
-#content-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.grid {
+  columns: 350px;
+  column-gap: 5px; 
 }
 
+.grid-item {
+  break-inside: avoid-column;
+}
+
+
 .news-content {
-  margin: 1em;
-  /* border-color: black;
-  border-style: solid; */
+  margin: 40px 20px;
   padding: 30px;
   border-radius: 10px;
   background-color: white;
