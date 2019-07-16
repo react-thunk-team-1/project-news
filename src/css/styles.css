@@ -52,10 +52,11 @@ p {
 }
 
 #news-wrapper{
-  margin-top: 50px;
-  padding: 25px;
+  padding-top: 100px;
+  /* padding: 25px; */
   background-color: rgb(218, 238, 255);
   min-height: 7 00px;
+  padding-bottom: 20px;
 }
 
 .article {
@@ -64,7 +65,7 @@ p {
 }
 
 img {
-  width: 300px;
+  width: inherit;
 
 }
 
@@ -93,4 +94,14 @@ img {
   border-radius: 10px;
   background-color: white;
   box-shadow: 1px 1px 100px rgb(238, 238, 238);
+}
+
+#bottom-bar {
+  background-color: black;
+}
+
+#attribution {
+  margin: 0;
+  font-size: 20px;
+  padding: 20px;
 }
